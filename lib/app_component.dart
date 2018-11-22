@@ -8,7 +8,12 @@ import 'src/todo_list/todo_list_component.dart';
 @Component(
   selector: 'my-app',
   styleUrls: ['app_component.css'],
-  templateUrl: 'app_component.html',
+  template: '''
+  <h1>My First AngularDart App in inline temlate</h1>
+
+<todo-list></todo-list>
+
+  ''',
   directives: [TodoListComponent],
 )
 class AppComponent {
